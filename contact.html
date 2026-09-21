@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact VIQ Motor Empire for car rental availability, pricing and booking support across Kuala Lumpur and Selangor.">
+    <link rel="canonical" href="https://www.example.com/contact.html">
+    <title>Contact & FAQ | VIQ Motor Empire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=22">
+</head>
+<body class="contact-page">
+
+    <header class="site-header" id="site-header">
+        <nav class="navbar container">
+            <a href="index.html#home" class="logo" aria-label="VIQ Motor Empire Home">
+                <img class="logo-mark" src="img/VIQ%20MOTOR%20EMPIRE%20BLACK.png" alt="">
+                <span class="logo-copy"><strong>VIQ MOTOR</strong><small>EMPIRE</small></span>
+            </a>
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="fleet.html">Car Fleet</a>
+                <a class="is-active" href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="language-switcher" id="language-switcher" type="button" aria-label="Current language: English" aria-expanded="false"><span class="globe-icon" aria-hidden="true"></span><span class="language-code">EN</span></button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero contact-hero" id="home">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <div class="hero-copy reveal">
+                    <div class="eyebrow">BOOKING & ENQUIRY</div>
+                    <h1>Need a car? <span>Let us check for you.</span></h1>
+                    <p>Send your dates, pickup location and car preference. We’ll confirm availability, pricing and booking details on WhatsApp.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-large">Send trip details <span>→</span></a>
+                        <button class="btn btn-whatsapp btn-large" data-whatsapp-general type="button"><span class="whatsapp-icon"></span>WhatsApp Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <aside class="contact-aside reveal">
+                        <div class="contact-process-card">
+                            <h2>What happens next</h2>
+                            <ol>
+                                <li><b>1</b><span>Send your dates & pickup location</span></li>
+                                <li><b>2</b><span>We check live car availability</span></li>
+                                <li><b>3</b><span>Confirm your booking on WhatsApp</span></li>
+                            </ol>
+                        </div>
+
+                        <div class="contact-map-card">
+                            <iframe
+                                src="https://www.google.com/maps?q=Cyberjaya%2C%20Selangor%2C%20Malaysia&output=embed"
+                                title="Map of Cyberjaya, Selangor"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                            <a class="contact-map-label" href="https://www.google.com/maps/search/?api=1&query=Cyberjaya%2C%20Selangor%2C%20Malaysia" target="_blank" rel="noopener noreferrer">
+                                <span class="contact-map-pin">◎</span>
+                                <span><strong>View on Google Maps</strong><small>Cyberjaya, Selangor, Malaysia</small></span>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+
+                        <div class="contact-check-card">
+                            <h2>What helps us check faster</h2>
+                            <ul>
+                                <li>Rental date and duration</li>
+                                <li>Pickup location: Cyberjaya, Selangor</li>
+                                <li>Preferred car or passenger count</li>
+                                <li>Flight number or special requests</li>
+                            </ul>
+                            <p>No payment is required at this stage. We confirm availability first.</p>
+                        </div>
+                    </aside>
+
+                    <div class="contact-form-panel reveal">
+                        <div class="contact-form-heading">
+                            <span class="contact-form-kicker">START A CONVERSATION</span>
+                            <h3>Tell us what you need.</h3>
+                            <p>Share a few details and we’ll get back to you with availability and pricing.</p>
+                        </div>
+                        <form class="contact-form" id="contact-form">
+                            <div class="contact-form-grid">
+                                <label class="contact-field"><span>Your name</span><input type="text" name="name" autocomplete="name" placeholder="e.g. Alex Tan" required></label>
+                                <label class="contact-field"><span>WhatsApp number</span><input type="tel" name="phone" autocomplete="tel" placeholder="e.g. +60 12 345 6789" required></label>
+                                <label class="contact-field"><span>Pickup date</span><input type="date" name="pickup" required></label>
+                                <label class="contact-field"><span>Return date</span><input type="date" name="return" required></label>
+                            </div>
+                            <label class="contact-field"><span>Pickup location</span><select name="location" required><option value="Cyberjaya, Selangor">Cyberjaya, Selangor</option></select></label>
+                            <label class="contact-field"><span>Preferred car or type</span><input type="text" name="vehicle" placeholder="e.g. Myvi, Altis, any 7-seater" required></label>
+                            <label class="contact-field"><span>Message <small>(optional)</small></span><textarea name="message" rows="3" placeholder="Tell us about your trip or any special requests..."></textarea></label>
+                            <button class="btn btn-primary contact-submit" type="submit">Send Enquiry <span aria-hidden="true">↗</span></button>
+                            <p class="contact-form-note">You’ll continue in WhatsApp to send your enquiry.</p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+            <div class="container faq-layout">
+                <div class="faq-intro reveal">
+                    <span class="section-label">BEFORE YOU MESSAGE</span>
+                    <h2>Frequently asked<br>questions</h2>
+                    <p>Quick answers to what people ask most before booking. Can’t find yours? Our team replies on WhatsApp in about 10 minutes.</p>
+                    <button class="faq-whatsapp-link" data-whatsapp-general type="button"><span class="whatsapp-icon"></span>Ask us on WhatsApp</button>
+                </div>
+                <div class="faq-list" id="faq-list">
+                    <article class="faq-item active reveal"><button class="faq-question" type="button" aria-expanded="true"><span>How do I check car availability?</span><span class="faq-icon">×</span></button><div class="faq-answer"><p>Send us your dates and the car you’re interested in via the enquiry form or WhatsApp. We check the live schedule and confirm whether it’s available, usually within about 10 minutes during opening hours.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question" type="button" aria-expanded="false"><span>Where do I pick up the car?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>All cars are collected from our pickup location in Cyberjaya, Selangor.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question" type="button" aria-expanded="false"><span>Can I rent daily, weekly or monthly?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. We offer flexible rental periods, subject to vehicle availability and your requirements.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question" type="button" aria-expanded="false"><span>What do I need to prepare before booking?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Prepare your preferred dates, pickup location, contact number and a valid driving licence for the booking process.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question" type="button" aria-expanded="false"><span>Is the final price confirmed on WhatsApp?</span><span class="faq-icon">+</span></button><div class="faq-answer"><p>Yes. We confirm availability, rental pricing and booking details with you before you decide.</p></div></article>
+                </div>
+            </div>
+            </section>
+    </main>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><h2>Let’s get you<br>on the road.</h2><a class="footer-arrow" href="index.html#home" aria-label="Go to homepage">↘</a><p>Reliable Cars. Affordable Rates. Easy Booking.</p></div><div class="footer-links"><h4>Quick Links</h4><a href="index.html#home">Home</a><a href="fleet.html">Our Cars</a><a href="index.html#how-it-works">How It Works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><div class="footer-links"><h4>Contact</h4><button data-whatsapp-general class="footer-action" type="button">WhatsApp</button><a href="tel:+60XXXXXXXXX" data-phone-link>Phone</a></div><div class="footer-links"><h4>Information</h4><a href="#">Terms & Conditions</a><a href="#">Privacy Policy</a></div></div><div class="footer-socials"><span>Direct support</span><a href="https://www.facebook.com/viqmotorempire" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="https://www.instagram.com/viqmotorempire" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="index.html#home" class="footer-back-top" aria-label="Back to top">↑</a></div><div class="footer-signature" aria-hidden="true">VIQ MOTOR EMPIRE</div><div class="footer-bottom"><p>© <span id="current-year"></span> VIQ Motor Empire. All rights reserved.</p><p>Car Rental in Cyberjaya, Subang Jaya, Kuala Lumpur & Selangor</p></div></div></footer>
+
+    <button class="floating-whatsapp" data-whatsapp-general aria-label="Chat with VIQ Motor Empire on WhatsApp" type="button"><span class="floating-whatsapp-icon"></span><span class="floating-whatsapp-label">Chat with us on WhatsApp</span></button>
+    <script src="js/script.js?v=22"></script>
+</body>
+</html>
